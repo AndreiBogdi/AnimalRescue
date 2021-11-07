@@ -6,6 +6,11 @@ public class Dog {
     int heightInCm;
     String name;
     String color;
+    int healthCondition;
+    int mood;
+    String favouriteFood;
+    String favouriteActivity;
+    int hunger;
 
     public void eat() {System.out.println("Eating...");}
     public void sleep() {System.out.println("Sleeping....");}
