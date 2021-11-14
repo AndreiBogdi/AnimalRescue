@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Adoption {
+public class Rescuer {
     int budget;
     String name;
 }
