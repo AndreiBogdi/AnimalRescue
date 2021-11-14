@@ -1,22 +1,25 @@
 package AnimalRescue;
 public class Main {
     public static void main(String [] args){
-        AnimalRescue.Dog rex = new AnimalRescue.Dog();
-        rex.name = "Rex";
-        rex.breed = "Labradord";
-        rex.age = 1;
-        System.out.println(rex.name);
-        System.out.println(rex.age);
+        Animal rex = new Animal();
+        rex.setName("Rex");
+        rex.setBreed("Labrador");
+        String breed=rex.getBreed();
+        Byte age=rex.getAge();
+        rex.setAge((byte) 1);
+        System.out.println(rex.getName());
+        System.out.println(rex.getAge());
         rex.play();
-        rex.name = "Blackie";
-        System.out.println(rex.name);
+        rex.setName("Blackie");
+        System.out.println(rex.getName());
 
-        Dog freddie = new Dog();
-        System.out.println(freddie.name);
-        freddie.name = "Freddie";
+        Animal freddie = new Animal();
+        System.out.println(freddie.getName());
+        freddie.setName("Freddie");
 
-        Dog max = new Dog();
-        max.breed = " Buldog";
+        Animal max = new Animal();
+        max.setBreed("Buldog");
+
 
     }
 }
